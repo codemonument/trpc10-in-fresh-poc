@@ -9,6 +9,7 @@
     "@trpc/server": "https://esm.sh/*@trpc/server@next",
     "@trpc/server/": "https://esm.sh/*@trpc/server@next/",
     "@trpc/client": "https://esm.sh/*@trpc/client@next",
-    "@trpc/client/": "https://esm.sh/*@trpc/client@next/"
+    "@trpc/client/": "https://esm.sh/*@trpc/client@next/",
+    "zod": "https://deno.land/x/zod@v3.19.1/mod.ts"
   }
 }

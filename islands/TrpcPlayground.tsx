@@ -1,13 +1,15 @@
+import { useState } from "preact/hooks";
 import {trpc} from '@/src/trpc/client.ts'
 
-export default async function TrpcPlayground() {
-//   const [count, setCount] = useState(props.start);
+export default function TrpcPlayground() {
+  const [greeting, setGreeting] = useState('');
 
-const result = await trpc.hello.query('World');
+ trpc.hello.query('World')
+ .then(res => setGreeting(res));
 
   return (
     <div>
-        {result}
+        {greeting}
     </div>
   );
 }

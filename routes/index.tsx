@@ -1,5 +1,6 @@
 import { Head } from "$fresh/runtime.ts";
 import Counter from "../islands/Counter.tsx";
+import TrpcPlayground  from "../islands/TrpcPlayground.tsx";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <p>
           Welcome to `fresh`.
         </p>
+        <TrpcPlayground></TrpcPlayground>
         <Counter start={3} />
       </div>
     </>

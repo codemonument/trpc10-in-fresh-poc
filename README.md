@@ -10,6 +10,10 @@ deno task start
 
 This will watch the project directory and restart as necessary.
 
+## Useful Links 
+
+- Find trpc server adapters here: https://github.com/trpc/trpc/tree/next/packages/server/src/adapters
+
 ## Repo Log 
 
 ### 2022-10-26 trpc Integration (WIP) 

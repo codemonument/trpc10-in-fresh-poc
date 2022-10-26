@@ -4,10 +4,10 @@ import { trpcExpressMiddleware } from "@/src/trpc/server.ts";
 
 export const opineServer = opine(); // opine is express ported to deno
 
+opineServer.use(opineCors());
+
 // apply tRPC router as a middleware
 opineServer.use(
   "/trpc",
   trpcExpressMiddleware,
 );
-
-opineServer.use(opineCors());

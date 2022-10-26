@@ -1,21 +1,18 @@
-import { HandlerContext } from "$fresh/server.ts";
-import { trpcExpressMiddleware } from "@/src/trpc/server.ts";
-import { resolve } from "https://deno.land/std@0.150.0/path/win32.ts";
+import { HandlerContext, Handlers } from "$fresh/server.ts";
 
-export const handler = async (
-  _req: Request,
-  _ctx: HandlerContext,
-): Promise<Response> => {
-  const expressHandlerPromise = await new Promise<Response>(
-    (resolve, reject) => {
-      trpcExpressMiddleware.apply(_req, {
-        // TODO: How to mock response object correctly?
-        send: (param: string) => {
-          resolve(new Response(param));
-        },
-      });
-    },
-  );
-
-  return expressHandlerPromise;
+/**
+ * NOTE: This route is currently not used in V1.0.0
+ * TRPC Client is configured to directly connect to localhost:3000/trpc, which is the endpoint of the additional opine server
+ */
+export const handler: Handlers = {
+  async GET(_req: Request, ctx: HandlerContext) {
+    const trpcReq = new Request("http://localhost:3000/trpc", _req);
+    const trpcResponse = await fetch(trpcReq);
+    return trpcResponse;
+  },
+  async POST(_req: Request, ctx: HandlerContext) {
+    const trpcReq = new Request("http://localhost:3000/trpc", _req);
+    const trpcResponse = await fetch(trpcReq);
+    return trpcResponse;
+  },
 };

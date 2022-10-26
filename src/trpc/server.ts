@@ -5,12 +5,11 @@ import {
 } from "@trpc/server/adapters/express";
 import { z } from "zod";
 
-// Initialize a context for the server
-function createContext(opts: CreateExpressContextOptions) {
-  return {};
-}
-
-// Get the context type
+// created for each request
+const createContext = ({
+  req,
+  res,
+}: CreateExpressContextOptions) => ({}); // no context
 type Context = inferAsyncReturnType<typeof createContext>;
 
 const t = initTRPC.context<Context>().create();

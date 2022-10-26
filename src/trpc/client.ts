@@ -7,7 +7,7 @@ import type { AppRouter } from "./server.ts";
  * since location is not defined in global scope on server and crashes on deno deploy.
  */
 let host;
-if (location) {
+if (globalThis.location) {
   console.log("Origin: ", location?.origin);
   host = location?.origin;
 }

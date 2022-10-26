@@ -1,5 +1,4 @@
 import { Head } from "$fresh/runtime.ts";
-import Counter from "../islands/Counter.tsx";
 import TrpcPlayground  from "../islands/TrpcPlayground.tsx";
 
 export default function Home() {
@@ -7,6 +6,8 @@ export default function Home() {
     <>
       <Head>
         <title>Fresh App</title>
+        <link href="https://unpkg.com/open-props" rel="stylesheet"></link>
+        <link href="./global.css" rel="stylesheet"></link>
       </Head>
       <div>
         <img
@@ -18,8 +19,9 @@ export default function Home() {
         <p>
           Welcome to `fresh`.
         </p>
+
+        <h2>TRPC Playground - Island</h2>
         <TrpcPlayground></TrpcPlayground>
-        <Counter start={3} />
       </div>
     </>
   );

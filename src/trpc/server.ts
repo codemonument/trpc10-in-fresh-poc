@@ -1,5 +1,4 @@
 import { initTRPC } from "@trpc/server";
-import { FetchCreateContextFnOptions } from "@trpc/server/adapters/fetch";
 import { createExpressMiddleware } from "@trpc/server/adapters/express";
 import { Context, createContext } from "./fetch-context.ts";
 // import { Context, createContext } from "./express-context.ts";
@@ -7,7 +6,7 @@ import { z } from "zod";
 
 const t = initTRPC.context<Context>().create();
 
-const appRouter = t.router({
+export const appRouter = t.router({
   hello: t.procedure
     .input(z.string())
     .query((req) => {

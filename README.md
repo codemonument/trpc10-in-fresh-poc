@@ -17,9 +17,17 @@ This will watch the project directory and restart as necessary.
 - Find trpc server adapters here: https://github.com/trpc/trpc/tree/next/packages/server/src/adapters
 - The Git Adress of this Repo: https://github.com/jbscratch/trpc10-in-fresh
 
+## Maintainer Links 
+
+- Deno Deploy Dashboard. https://dash.deno.com/projects/trpc10-in-fresh
+
 ## Repo Log 
 
-### 2022-10-26 trpc Integration (WIP) 
+### 2022-10-26 
+
+Create deployment on deno deploy: https://dash.deno.com/projects/trpc10-in-fresh
+
+### 2022-10-26 trpc Integration 
 
 https://trpc.io/docs/v10/quickstart
 

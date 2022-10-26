@@ -1,27 +1,42 @@
 import { Head } from "$fresh/runtime.ts";
-import TrpcPlayground  from "../islands/TrpcPlayground.tsx";
+import TrpcPlayground from "../islands/TrpcPlayground.tsx";
 
 export default function Home() {
   return (
     <>
       <Head>
         <title>Fresh App</title>
-        <link href="https://unpkg.com/open-props" rel="stylesheet"></link>
-        <link href="./global.css" rel="stylesheet"></link>
-      </Head>
-      <div>
-        <img
-          src="/logo.svg"
-          width="128"
-          height="128"
-          alt="the fresh logo: a sliced lemon dripping with juice"
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/open-props/open-props.min.css"
         />
-        <p>
-          Welcome to `fresh`.
-        </p>
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/open-props/normalize.min.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/open-props/buttons.min.css"
+        />
+        <link rel="stylesheet" href="./global.css"></link>
+      </Head>
+      <div class="container">
+        <div class="logo-container">
+          <img
+            src="/logo.svg"
+            width="128"
+            height="128"
+            alt="the fresh logo: a sliced lemon dripping with juice"
+          />
+          <p class="welcome">
+            Welcome to `fresh`!
+          </p>
+        </div>
 
-        <h2>TRPC Playground - Island</h2>
-        <TrpcPlayground></TrpcPlayground>
+        <section>
+          <h4>Island "TRPC Playground"</h4>
+          <TrpcPlayground></TrpcPlayground>
+        </section>
       </div>
     </>
   );

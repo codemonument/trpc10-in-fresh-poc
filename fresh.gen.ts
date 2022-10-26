@@ -5,7 +5,7 @@
 import config from "./deno.json" assert { type: "json" };
 import * as $0 from "./routes/api/joke.ts";
 import * as $1 from "./routes/index.tsx";
-import * as $2 from "./routes/trpc.ts";
+import * as $2 from "./routes/trpc/[...path].ts";
 import * as $$0 from "./islands/Counter.tsx";
 import * as $$1 from "./islands/TrpcPlayground.tsx";
 
@@ -13,7 +13,7 @@ const manifest = {
   routes: {
     "./routes/api/joke.ts": $0,
     "./routes/index.tsx": $1,
-    "./routes/trpc.ts": $2,
+    "./routes/trpc/[...path].ts": $2,
   },
   islands: {
     "./islands/Counter.tsx": $$0,

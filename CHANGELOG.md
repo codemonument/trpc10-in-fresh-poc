@@ -1,5 +1,45 @@
 # Changelog
 
+## 2.0.0 - 2022-10-26 
+
+Second working trpc v10 integration! 
+
+Method: 
+1. Update the server.ts like described by the trpc `fetch` adapter developed for cloudflare workers. 
+   Instructions: https://trpc.io/docs/v10/fetch
+2. Write a fresh route at `/routes/trpc/[...path].ts`, with two request handlers for GET and POST.
+   Instructions: https://fresh.deno.dev/docs/getting-started/custom-handlers 
+
+   Note: The `[...path].ts` is required for fresh to pass the full path after /trpc to the trpc handler
+3. Call the `fetchRequestHandler` from `@trpc/server/adapters/fetch` for both handlers like this: 
+
+   ```
+   import { HandlerContext, Handlers } from "$fresh/server.ts";
+   import { fetchRequestHandler } from "@trpc/server/adapters/fetch";
+   import { appRouter } from "@/src/trpc/server.ts";
+   import { createContext } from "@/src/trpc/fetch-context.ts";
+
+   export const handler: Handlers = {
+      GET(_req: Request, ctx: HandlerContext) {
+         return fetchRequestHandler({
+            endpoint: "/trpc",
+            req: _req,
+            router: appRouter,
+            createContext,
+         });
+      },
+      POST(_req: Request, ctx: HandlerContext) {
+         return fetchRequestHandler({
+            endpoint: "/trpc",
+            req: _req,
+            router: appRouter,
+            createContext,
+         });
+      },
+   };
+
+   ```
+
 ## 1.0.0 - 2022-10-26
 
 First working trpc v10 integration! 

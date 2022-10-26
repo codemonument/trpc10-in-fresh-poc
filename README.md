@@ -1,6 +1,8 @@
 # trpc10-in-fresh
 
-### Usage
+See this repo deployed at: trpc10-in-fresh.deno.dev/
+
+### Usage (Locally)
 
 Start the project:
 
@@ -13,6 +15,7 @@ This will watch the project directory and restart as necessary.
 ## Useful Links 
 
 - Find trpc server adapters here: https://github.com/trpc/trpc/tree/next/packages/server/src/adapters
+- The Git Adress of this Repo: https://github.com/jbscratch/trpc10-in-fresh
 
 ## Repo Log 
 

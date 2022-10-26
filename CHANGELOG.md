@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.2.0 - 2022-10-26 
+
+- Cleanup old & unneeded Files 🗑
+- Improve Styling to be presentable in Blogpost ✨
+
 ## 2.1.0 - 2022-10-26 
 
 - Fixed deno-deploy deployment at https://trpc10-in-fresh.deno.dev/, 

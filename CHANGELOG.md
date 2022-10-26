@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.1.0 - 2022-10-26 
+
+- Fixed deno-deploy deployment at https://trpc10-in-fresh.deno.dev/, 
+  by using window.location.origin for creating the trpc client, instead of hardcoding localhost:8000
+
 ## 2.0.0 - 2022-10-26 
 
 Second working trpc v10 integration! 

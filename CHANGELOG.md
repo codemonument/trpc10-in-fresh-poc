@@ -3,6 +3,7 @@
 ## Next  
 
 - Change page title
+- Switch to selfhost open-props (caused by unpgk.com and esm.sh outage)
 
 ## 2.2.0 - 2022-10-26 
 

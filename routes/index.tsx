@@ -8,20 +8,18 @@ export default function Home() {
         <title>TRPC in Deno Fresh</title>
         <link
           rel="stylesheet"
-          href="https://unpkg.com/open-props/open-props.min.css"
+          href="./open-props@1.4.16/open-props.min.css"
         />
         <link
           rel="stylesheet"
-          href="https://unpkg.com/open-props/normalize.min.css"
+          href="./open-props@1.4.16/normalize.min.css"
         />
 
-        {/* TODO: Check problems with button.min.css loading from unpkg! */}
-        {
-          /* <link
+        <link
           rel="stylesheet"
-          href="https://unpkg.com/open-props/buttons.min.css"
-        /> */
-        }
+          href="./open-props@1.4.16/buttons.min.css"
+        />
+
         <link rel="stylesheet" href="./global.css"></link>
       </Head>
       <div class="container">

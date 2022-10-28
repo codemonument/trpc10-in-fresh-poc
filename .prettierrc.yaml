@@ -1,0 +1,21 @@
+# Using Yaml to be able to use comments :) 
+# Source Gist: https://gist.github.com/bjesuiter/97e2cc820804003090d51e9656151062
+trailingComma: "es5"
+printWidth: 100
+tabWidth: 2
+useTabs: true
+singleQuote: true
+bracketSpacing: true
+arrowParens: "always"
+semi: true
+quoteProps: "consistent"
+endOfLine: "auto"
+
+# If option overrides are needed, example: 
+#overrides:
+#  - files: 
+#      - "*.scss"
+#      - "*.css"
+#      - "*.yaml"
+#    options: 
+#      singleQuote: false

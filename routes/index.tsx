@@ -14,10 +14,14 @@ export default function Home() {
           rel="stylesheet"
           href="https://unpkg.com/open-props/normalize.min.css"
         />
-        <link
+
+        {/* TODO: Check problems with button.min.css loading from unpkg! */}
+        {
+          /* <link
           rel="stylesheet"
           href="https://unpkg.com/open-props/buttons.min.css"
-        />
+        /> */
+        }
         <link rel="stylesheet" href="./global.css"></link>
       </Head>
       <div class="container">

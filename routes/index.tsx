@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Fresh App</title>
+        <title>TRPC in Deno Fresh</title>
         <link
           rel="stylesheet"
           href="https://unpkg.com/open-props/open-props.min.css"

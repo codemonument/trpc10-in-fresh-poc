@@ -1,5 +1,9 @@
 # Changelog
 
+## Next  
+
+- Change page title
+
 ## 2.2.0 - 2022-10-26 
 
 - Cleanup old & unneeded Files 🗑

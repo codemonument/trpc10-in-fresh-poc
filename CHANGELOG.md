@@ -4,6 +4,7 @@
 
 - Change page title
 - Switch to selfhost open-props (caused by unpgk.com and esm.sh outage)
+- Improve button text color
 
 ## 2.2.0 - 2022-10-26 
 

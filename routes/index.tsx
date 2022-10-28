@@ -6,20 +6,9 @@ export default function Home() {
     <>
       <Head>
         <title>TRPC in Deno Fresh</title>
-        <link
-          rel="stylesheet"
-          href="./open-props@1.4.16/open-props.min.css"
-        />
-        <link
-          rel="stylesheet"
-          href="./open-props@1.4.16/normalize.min.css"
-        />
-
-        <link
-          rel="stylesheet"
-          href="./open-props@1.4.16/buttons.min.css"
-        />
-
+        <link rel="stylesheet" href="./open-props@1.4.16/open-props.min.css" />
+        <link rel="stylesheet" href="./open-props@1.4.16/normalize.min.css" />
+        <link rel="stylesheet" href="./open-props@1.4.16/buttons.min.css" />
         <link rel="stylesheet" href="./global.css"></link>
       </Head>
       <div class="container">
@@ -30,9 +19,7 @@ export default function Home() {
             height="128"
             alt="the fresh logo: a sliced lemon dripping with juice"
           />
-          <p class="welcome">
-            Welcome to `fresh`!
-          </p>
+          <p class="welcome">Welcome to `fresh`!</p>
         </div>
 
         <section>
